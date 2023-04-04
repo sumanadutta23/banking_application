@@ -1,0 +1,16 @@
+body{
+    background-color:aqua;
+}
+.full-width {
+    width: 100%;
+}
+h1 {
+    
+    font-weight:bolder;
+    color: rgba(109, 3, 88, 0.881);
+    font-family:'Times New Roman', Times, serif;
+
+}
+/* .row mat-card {
+    background-color: rgb(185, 182, 182)
+} */

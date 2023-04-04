@@ -1,0 +1,25 @@
+
+<!-- <mat-toolbar color="primary">
+    <span><a mat-button routerLink="/">STL Bank</a></span>
+    <span class="example-spacer"></span>
+    <a mat-button *ngIf="!login.isLoggedIn()" [routerLink]="'/login'">Login</a>
+    <a mat-button *ngIf="!login.isLoggedIn()" [routerLink]="'/signup'">Signup</a>
+    <a mat-button *ngIf="login.isLoggedIn()">{{login.getUser().username}}</a>
+    <a mat-button *ngIf="login.isLoggedIn()" (click)="logoutUser()"> Logout</a>
+
+
+
+
+</mat-toolbar> -->
+
+<mat-toolbar>
+    <a routerLink= "/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>account_balance</mat-icon>
+    </a>
+    <span>STL Bank</span>
+    <span class="example-spacer"></span>
+    <a mat-button *ngIf="!isLoggedIn" [routerLink]="'/login'"  >Signin</a>
+    <a mat-button *ngIf="!isLoggedIn" [routerLink]="'/signup'" color="accent">Sign up </a>
+    <a mat-button *ngIf="isLoggedIn && user">{{login.getUser().username}}</a>
+    <a mat-button *ngIf="isLoggedIn" (click)="logoutUser()"> Logout</a>
+  </mat-toolbar>

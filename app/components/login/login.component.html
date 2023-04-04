@@ -1,0 +1,44 @@
+<br>
+<div class="bootstrap-wrapper">
+    <div class="container ">
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                <div class="container text-center">
+                    <img class="img-fluid" style="width: 100px;" src="/assets/login.png" alt=""/>
+                </div>
+                <h1 class="text-center">Login here</h1>
+                
+                <!-- creating form -->
+                
+                <form (ngSubmit)="formSubmit()">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input [(ngModel)]="loginData.username" name="username" required type="text" autocomplete="current-username" matInput placeholder="Enter here" />
+                        <mat-hint>valid Username</mat-hint>
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>password</mat-label>
+                        <input [(ngModel)]="loginData.password" name="password" required type="password" autocomplete="current-password" matInput placeholder="Enter here" />
+                        <!-- <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button> -->
+                      </mat-form-field>
+
+                      <div class="container text-center">
+                        <button type="submit" mat-raised-button color="primary">Login</button>
+                        <button class="ml10" routerLink="/signup" type="submit" mat-raised-button color="accent">Signup</button>
+                      </div>
+                      <br>
+
+                </form>
+                </mat-card>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<br>

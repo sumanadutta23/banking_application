@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Main Body Section */
+  .main-body{
+    width: auto;
+    padding: 1rem;
+  }
+  .promo_card{
+    width: 100%;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 0.5rem 1rem 1rem 3rem;
+    background: rgb(37, 37, 37);
+  }
+  .promo_card2{
+    width: 100%;
+    color:black;
+    margin-top: 5px;
+    border-radius: 8px;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    background-color: bisque;
+    
+  }
+  .promo_card h1, .promo_card span, button{
+    margin: 5px;
+  }
+  

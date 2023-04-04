@@ -1,0 +1,57 @@
+/*  import google fonts */
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Main Body Section */
+.main-body{
+  width: auto;
+  padding: 1rem;
+}
+.promo_card{
+  width: 100%;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 0.5rem 1rem 1rem 3rem;
+  background: rgb(37, 37, 37);
+}
+.promo_card h1, .promo_card span, button{
+  margin: 10px;
+}
+
+.history_lists{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+table{
+  background: #fff;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 10px;
+}
+table td, th{
+  padding: 0.2rem 0.8rem;
+}
+table th{
+  font-size: 15px;
+}
+table td{
+  font-size: 13px;
+  color: rgb(100, 100, 100);
+}

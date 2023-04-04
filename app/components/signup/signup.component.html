@@ -1,0 +1,87 @@
+<div class="bootstrap-wrapper">
+    <div class="container" style="margin: 15px 0px 15px 0px;">
+        <div class="row">
+
+            <div class="col-md-6 offset-md-3">
+                
+                <div class="container text-center">
+
+                    <img class="img-fluid" style="width: 100px;" src="/assets/login.png" alt="" />
+                </div>
+                <!-- <mat-card>
+                    <mat-card-header>Hello</mat-card-header>
+                </mat-card> -->
+                <h1 class="text-center">Register Yourself!!</h1>
+
+                <form (ngSubmit)="formSubmit()">
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Username</mat-label>
+                            <input [(ngModel)]="user.username" name="username" required type="text" autocomplete="current-username" matInput placeholder="Enter here" pattern="[A-Za-z]{3,}">
+                            <!-- <label style="margin-left: 160px; text-shadow: 2px 2px 8px #FF0000;"  *ngIf = "username.dirty && username.invalid">Name should be atleast 3 Character</label> -->
+                            <mat-hint>Username must be unique !!</mat-hint>
+                        </mat-form-field>
+                        <!-- password -->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>password</mat-label>
+                            <input [(ngModel)]="user.password" name="password" required type="password" autocomplete="current-password"  matInput />
+                            <!-- <label *ngIf="pwd.dirty && pwd.valid">pp</label> pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z].{5,})" #pwd=ngModel -->
+                        </mat-form-field>
+
+                        <!-- first name -->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>First Name</mat-label>
+                            <input  [(ngModel)]="user.firstName" name="firstName" required type="text" matInput  />
+                            
+                        </mat-form-field>
+
+                        <!-- lastname -->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Last Name</mat-label>
+                            <input  [(ngModel)]="user.lastName" name="lastName" required type="text" matInput />
+                        </mat-form-field>
+
+                    <!-- email -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input [(ngModel)]="user.email" name="email" required type="email" placeholder="pat@example.com" matInput />
+                        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Phone</mat-label>
+                        <input [(ngModel)]="user.phone" name="number" required type="number" matInput  />
+                        <!-- <mat-hint align="end">{{input.value.length}}/10</mat-hint> -->
+                    </mat-form-field> 
+
+                    <!-- <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input [(ngModel)]="user.password" name="password" required type="password" matInput />
+                    </mat-form-field> -->
+
+                    <!-- <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Confirm password</mat-label>
+                        <input [(ngModel)]="loginData.password1" name="password1" required type="password" matInput />
+                    </mat-form-field> -->
+                    <!-- <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Select Bank Account Type</mat-label>
+                        
+                        <mat-select matInput [(ngModel)]="user.account" name="account" >
+                           <mat-option  value="savings">Savings</mat-option>
+                          <mat-option  value="current">Current</mat-option>
+                          
+                        </mat-select>
+                      </mat-form-field> -->
+
+                    <div class="container text-center">
+                        <button type="submit" mat-raised-button color="primary">Sign Up</button>
+                        <a style="margin-left: 8px;" routerLink="/login" mat-raised-button color="accent" >login</a>
+
+                    </div>
+
+                </form>
+                
+
+            </div>
+        </div>
+    </div>
+</div>

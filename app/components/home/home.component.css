@@ -1,0 +1,29 @@
+body{
+    background-color:aqua;
+    /* max-width: 100%; */
+}
+h1 {
+    
+    font-weight:bolder;
+    color: rgba(109, 3, 88, 0.881);
+    font-family:'Times New Roman', Times, serif;
+    
+
+}
+.hight{
+    height: 80vh;
+    width:auto;
+}
+.colour{
+    
+    color:black;
+
+}
+.size{
+    height: 30vh;
+    width: 58vh;
+}
+
+/* .map {
+    background-image: linear-gradient(to right, #1aa866, #00ac8c, #00afad, #00afc7, #00add7, #00a3dc, #0098df, #008cdf, #0775d7, #2e5cca, #493fb8, #5e149f);
+} */
